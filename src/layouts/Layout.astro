@@ -4,6 +4,7 @@ interface Props {
 }
 
 const { title } = Astro.props;
+import Navbar from '../components/navbar';
 ---
 
 <!doctype html>
@@ -16,6 +17,7 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
+	<Navbar client:only="react"/>
 	<body>
 		<slot />
 	</body>

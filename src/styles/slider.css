@@ -1,0 +1,33 @@
+/* Set a specific height for the carousel (adjust as needed) */
+.carousel {
+    height: 400px;
+}
+
+/* Style carousel images */
+.carousel-item img {
+    object-fit: cover; /* Maintain image aspect ratio */
+    width: 100%;
+    height: 400px; /* Set to match the carousel height */
+}
+
+/* Style carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+/* Style carousel control icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #333; /* Background color of the control icons */
+    color: #fff; /* Icon color */
+    border-radius: 50%; /* Make the icons circular */
+    font-size: 24px;
+    padding: 10px;
+}
+
+/* Style the active carousel item */
+.carousel-item.active {
+    transition: opacity 0.5s;
+    opacity: 1;
+}
